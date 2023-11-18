@@ -1,0 +1,198 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+} */
+
+.team-container a {
+    text-decoration: none;
+    color: #333;
+}
+
+.team-area {
+    padding: 150px 0 0 20px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team-area .team-container .cards {
+    position: relative;
+    width: 300px;
+    height: 150px;
+    background: #333;
+    transition: 0.5s;
+}
+
+.team-area .team-container .cards:hover {
+    height: 260px;
+}
+
+.team-area .team-container .cards .lines {
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+.team-area .team-container .cards .lines::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 120px;
+    background: linear-gradient( transparent, #45f3ff, #45f3ff, #45f3ff, transparent);
+    animation: animate 12s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.team-area .team-container .cards .lines::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: #292929;
+}
+
+.team-area .team-container .cards .imgBX {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background: #000;
+    transition: 0.5s;
+    z-index: 5;
+    overflow: hidden;
+    /* background: linear-gradient( transparent, #ff3c7b, #ff3c7b, #ff3c7b, transparent); */
+}
+
+
+/* 
+.team-area .team-container .cards:hover .imgBX {
+    width: 250px;
+    height: 250px;
+} */
+
+.team-area .team-container .cards .imgBX::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient( transparent, #ff3c7b, #ff3c7b, #ff3c7b, transparent);
+    animation: animate2 10s linear infinite;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+.team-area .team-container .cards .imgBX::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: #292929;
+}
+
+.team-area .team-container .cards .imgBX img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+}
+
+.team-area .team-container .cards .contents {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.team-area .team-container .cards .contents .details {
+    padding: 10px 40px;
+    /* padding-top: 5px; */
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(115px);
+}
+
+.team-area .team-container .cards:hover .contents .details {
+    transform: translateY(5px);
+}
+
+
+/* .team-area .team-container .cards:hover .contents .details h2 {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #45f3ff;
+    line-height: 1.2em;
+} */
+
+.team-area .team-container .cards .contents .details h2 {
+    font-size: 1.25em;
+    font-weight: 500;
+    color: #fff;
+}
+
+.team-area .team-container .cards .contents .details .data {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.team-area .team-container .cards .contents .details h3 {
+    font-size: 1em;
+    color: #45f3ff;
+    /* line-height: 1em; */
+    font-weight: 600;
+}
+
+.team-area .team-container .cards .contents .details h3 span {
+    font-size: 0.85em;
+    font-weight: 400;
+    color: #fff;
+}
+
+.team-area .team-container .cards .contents .details .actionBtn button {
+    padding: 5px 10px;
+    /* border: none; */
+    /* outline: none; */
+    border-radius: 5px;
+    background: #45f3ff;
+    /* color: #222; */
+    cursor: pointer;
+}
+
+.button_color {
+    background: #19b3d3;
+    color: white;
+}

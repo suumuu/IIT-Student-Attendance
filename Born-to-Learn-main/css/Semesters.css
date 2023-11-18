@@ -1,0 +1,82 @@
+body {
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+.semesters-area {
+    /* padding: 55px 0 0 0; */
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#semester_id {
+    /* padding-top: 335px; */
+    padding-left: 50%;
+}
+
+.semesters-container {
+    /* width: 600px; */
+    /* height: auto; */
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+table {
+    transform: translate(-50%, -55%);
+    border-collapse: collapse;
+    width: 780px;
+    border: 1px solid #0d9dbb;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+tr {
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background-color: #f1eeee;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#semester {
+    background-color: #2f323a;
+    color: #fff;
+}
+
+#header {
+    background-color: #0d9dbb;
+    color: #fff;
+}
+
+
+/* tr:hover {
+    background-color: #b0e2ec;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+} */
+
+@media only screen and (max-width: 768px) {
+    table {
+        width: 90%;
+    }
+}

@@ -1,0 +1,21 @@
+.progress-bar {
+    background-color: #748e9b;
+}
+
+.progress .progress-bar {
+    border-radius: 20px;
+    border: 1px solid #000;
+    animation: animate-positive 1.5s;
+}
+
+@-webkit-keyframes animate-positive {
+    0% {
+        width: 0;
+    }
+}
+
+@-keyframes animate-positive {
+    0% {
+        width: 0;
+    }
+}

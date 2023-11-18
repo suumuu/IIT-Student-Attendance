@@ -1,0 +1,40 @@
+table {
+    transform: translate(-50%, 0%);
+    border-collapse: collapse;
+    /* width: 1000px; */
+    border: 1px solid #0d9dbb;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+tr {
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background-color: #f1eeee;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#header {
+    background-color: #0d9dbb;
+    color: #fff;
+}
+
+.button_color {
+    background: #19b3d3;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    table {
+        width: 90%;
+    }
+}
